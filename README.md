@@ -4,17 +4,22 @@
   <img src="https://github.com/Samadihadis/Streamify/blob/main/app/src/main/ic_launcher-playstore.png" width="150">
 </div>
 
-<h4>Showing Pexels video list in simple and show detials</h4>
+<h4>Showing Pexels video list in simple and show video details with stream playing</h4>
 
 Feature's:
+- MVVM Architecture
+- Glide
+- Retrofit
+- Room Database
+- SharePreferences
 - Constraintlayout
 - RecyclerView
 - Navigation Component(action, argument)
-- Glide
-- Retrofit
+- Bottom Navigation Support
 - Linear and Grid layout support
 - Fab Button and scroll and hide behavior's
 - Gson Convertor
+- Dark/Light Theme Settings
 - Animation
 - Adapter and ViewHolder
 - Util Class
