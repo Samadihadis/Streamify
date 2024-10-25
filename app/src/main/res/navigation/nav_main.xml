@@ -19,7 +19,11 @@
         android:id="@+id/videoDetailFragment"
         android:name="com.samadihadis.streamify.presentation.video.detail.VideoDetailFragment"
         android:label="Video Detail"
-        tools:layout="@layout/fragment_video_detail" />
+        tools:layout="@layout/fragment_video_detail">
+        <argument
+            android:name="videoModel"
+            app:argType="com.samadihadis.streamify.data.MainVideoModel" />
+    </fragment>
 
     <fragment
         android:id="@+id/settingFragment"
