@@ -2,6 +2,12 @@ package com.samadihadis.streamify.presentation
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.samadihadis.streamify.R
 import com.samadihadis.streamify.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -13,6 +19,12 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
+        val navView: BottomNavigationView = binding.bottomNavigationView
+        val navController = findNavController(R.id.navMainFragment)
+        val appBarConfiguration = AppBarConfiguration(
+            setOf(R.id.videoListFragment, R.id.settingFragment)
+        )
+        setupActionBarWithNavController(navController, appBarConfiguration)
+        navView.setupWithNavController(navController)
     }
 }
