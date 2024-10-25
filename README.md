@@ -30,6 +30,7 @@ Feature's:
 
   
 -  API = "https://api.pexels.com/"
+-  Debug Version 1.0 [apk file download link](https://github.com/Samadihadis/Streamify/blob/main/release/streamify-v1-debug.apk)
 
 <hr>
 
