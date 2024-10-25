@@ -4,7 +4,7 @@
   <img src="https://github.com/Samadihadis/Streamify/blob/main/app/src/main/ic_launcher-playstore.png" width="150">
 </div>
 
-<h4>Showing Pexels video list in simple and show video details with stream playing</h4>
+<h4>Showing Pexels video list in simple and show video details and stream playing with control key's</h4>
 
 Feature's:
 - MVVM Architecture
@@ -13,6 +13,7 @@ Feature's:
 - Room Database
 - SharePreferences
 - Constraintlayout
+- ExoPlayer
 - RecyclerView
 - Navigation Component(action, argument)
 - Bottom Navigation Support
