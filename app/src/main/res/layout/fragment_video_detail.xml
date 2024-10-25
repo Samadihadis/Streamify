@@ -5,4 +5,145 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/playerView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/videoImageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/banner_image_placeholder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerView" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/nameTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="User Name: "
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerView" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/nameValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/nameTitleTextView"
+        app:layout_constraintStart_toEndOf="@+id/nameTitleTextView"
+        app:layout_constraintTop_toTopOf="@+id/nameTitleTextView"
+        tools:text="hadis" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/identifierTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="User ID: "
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameValueTextView" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/identifierValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/identifierTitleTextView"
+        app:layout_constraintStart_toEndOf="@+id/identifierTitleTextView"
+        app:layout_constraintTop_toTopOf="@+id/identifierTitleTextView"
+        tools:text="Estepghan" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/qualityTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Video Quality: "
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/identifierValueTextView" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/qualityValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/qualityTitleTextView"
+        app:layout_constraintStart_toEndOf="@+id/qualityTitleTextView"
+        app:layout_constraintTop_toTopOf="@+id/qualityTitleTextView"
+        tools:text="HD" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/sizeTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Video Size: "
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qualityTitleTextView" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/sizeValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/sizeTitleTextView"
+        app:layout_constraintStart_toEndOf="@+id/sizeTitleTextView"
+        app:layout_constraintTop_toTopOf="@+id/sizeTitleTextView"
+        tools:text="34 MB" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/durationTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Video Duration: "
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sizeTitleTextView" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/durationValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/durationTitleTextView"
+        app:layout_constraintStart_toEndOf="@+id/durationTitleTextView"
+        app:layout_constraintTop_toTopOf="@+id/durationTitleTextView"
+        tools:text="12 s" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
